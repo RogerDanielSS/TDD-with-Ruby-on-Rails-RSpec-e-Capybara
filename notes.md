@@ -28,3 +28,8 @@ Anotações TDD com Ruby on Rails, RSpec e Capybara
 	spec (folder_
 	rspec (run tests)
 	Rspec adds ./liv to the $LOAD_PATH (Projetos com Ruby puro)
+  _spec (sufix)
+
+- Doc RSpec
+  https://www.betterspecs.org/
+  https://rspec.info/
