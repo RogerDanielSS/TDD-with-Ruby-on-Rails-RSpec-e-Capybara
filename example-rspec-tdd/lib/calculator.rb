@@ -1,6 +1,6 @@
-# frozen string literal
+# frozen_string_literal: true
 
-# calculator class
+# class Calculator
 class Calculator
   def sum(number_a, number_b)
     number_a + number_b
