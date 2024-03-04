@@ -2,7 +2,7 @@
 
 require 'calculator'
 
-RSpec.describe Calculator do  # Once rspec called the class, it inialize an instance as subject
+RSpec.describe Calculator do # Once rspec called the class, it inialize an instance as subject
   context '#sum' do
     subject(:calc) { described_class.new }
 
