@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe 'matchers de comparação' do
+describe 'matchers de igualdade' do
   it '#equal' do
     x = String.new('ruby')
     y = String.new('ruby')
