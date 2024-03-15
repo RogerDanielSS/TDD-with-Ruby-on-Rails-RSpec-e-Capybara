@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'string_not_empty'
 
 describe String do
