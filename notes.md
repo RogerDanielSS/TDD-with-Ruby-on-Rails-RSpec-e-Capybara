@@ -87,3 +87,21 @@ Anotações TDD com Ruby on Rails, RSpec e Capybara
 					When usuário confirma o recebimento do alerta
 					Then alerta é criado para envio de email
 
+- Hooks
+	- before (:suite) => Antes de toda a suite de testes
+	- after (:suite) => Depois de toda a suite de testes
+
+	- exemplo:
+		config.before(:suite) do
+			puts 'Antes de toda a suite de testes'
+		end
+
+		mais exemplos em
+		- spec_helper.rb
+		- atributos_spec.rb
+
+- Helper methods
+	
+	- Helper methods arbitrário: uma função comum escrita dentro do teste. Essa função também pode ser escrita dentro de um módulo que deve ser importado no teste ou spec_helper (solução mais elegante)
+	- let: Quando você precisa criar uma variável, ao invés de usar um bloco before para criar a var de instância, use let. Ao usar let, a variável é carregada somente quando ela é utilizada pela primeira vez no teste e fica em cache até o teste terminar
+	- let!

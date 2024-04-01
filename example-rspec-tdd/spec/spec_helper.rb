@@ -20,6 +20,22 @@ RSpec.configure do |config|
   # include helper_method
   config.include Helpers
 
+  config.before(:suite) do
+    puts '>> TESTES INICIADOS <<'
+  end
+
+  config.after(:suite) do
+    puts '>> TESTES FINALIZADOS <<'
+  end
+
+  config.before(:context) do
+    puts '>> Antes de todos os testes <<'
+  end
+
+  config.after(:all) do
+    puts '>> Depois de todos os testes <<'
+  end
+
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
