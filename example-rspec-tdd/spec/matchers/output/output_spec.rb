@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-describe 'Predicados' do
+describe 'Output' do
   it 'Matcher output' do
-    it { expect{ puts 'Roger Roger' }.to output.to_stdout }
+    expect{ puts 'Roger Roger' }.to output.to_stdout 
   end
 end
