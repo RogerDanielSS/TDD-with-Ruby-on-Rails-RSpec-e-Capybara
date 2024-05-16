@@ -20,6 +20,11 @@ RSpec.configure do |config|
   # include helper_method
   config.include Helpers
 
+  # define for all the tests
+  # config.define_derived_metadata do |meta|
+  #   meta[:aggregate_failures] = true
+  # end
+
   config.before(:suite) do
     puts '>> TESTES INICIADOS <<'
   end

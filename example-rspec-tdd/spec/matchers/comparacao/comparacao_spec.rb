@@ -24,6 +24,22 @@ describe 'matchers de comparação numérica' do
     expect(5).to be_between(5, 6).inclusive
   end
 
+  it 'be_between inclusive / agregadas' do
+    aggregate_failures do
+      expect(5).to be_between(5, 6)
+      expect(5).to be_between(5, 6).inclusive
+      # expect(7).to be_between(5, 6).inclusive
+      # expect(4).to be_between(5, 6)
+    end
+  end
+
+  it 'be_between inclusive / agregadas2', :aggregate_failures do
+    expect(5).to be_between(5, 6)
+    expect(5).to be_between(5, 6).inclusive
+    # expect(7).to be_between(5, 6).inclusive
+    # expect(4).to be_between(5, 6)
+  end
+
   it 'be_between exclusive' do
     expect(5).to be_between(4, 6).exclusive
   end
