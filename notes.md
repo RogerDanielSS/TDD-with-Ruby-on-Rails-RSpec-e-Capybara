@@ -105,3 +105,9 @@ Anotações TDD com Ruby on Rails, RSpec e Capybara
 	- Helper methods arbitrário: uma função comum escrita dentro do teste. Essa função também pode ser escrita dentro de um módulo que deve ser importado no teste ou spec_helper (solução mais elegante)
 	- let: Quando você precisa criar uma variável, ao invés de usar um bloco before para criar a var de instância, use let. Ao usar let, a variável é carregada somente quando ela é utilizada pela primeira vez no teste e fica em cache até o teste terminar
 	- let!
+
+-> Stubs e mocks
+
+- Doubles (dublês): Simulam o estado de uma classe que não existe
+- Stubs são para a fase de setup (substitue estados de classes existentes)
+- Mocks são para a fase de virify (testa comportamentos, como se uma função foi chamada)
