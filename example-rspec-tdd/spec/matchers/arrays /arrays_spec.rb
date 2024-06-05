@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe Array.new([1, 2, 3]), 'Array' do
+describe Array.new([1, 2, 3]), 'Array', :array do
 
   it '#include' do
     expect(subject).to include(2)
